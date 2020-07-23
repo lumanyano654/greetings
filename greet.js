@@ -17,9 +17,16 @@ function greet() {
 //    alert(nameEntered === "")
     //var langEntered = language;
 
-    if (nameEntered === "" && language.value === null){
+    if (nameEntered === "" && language === null){
 
         resultBox.innerHTML = "please enter name and select language!!!"
+    }
+    else if (nameEntered !== "" && language === null ){
+        resultBox.innerHTML = "please select language"
+    }
+
+    else if (nameEntered === "" ){
+        resultBox.innerHTML = "please enter name"
     }
 
    else if (language.value === "isixhosa") {
@@ -34,6 +41,8 @@ function greet() {
     else if (language.value=== "afrikaans"){
         resultBox.innerHTML = "Halo, " + nameEntered
     }
+
+    
     
     
 
