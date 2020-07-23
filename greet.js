@@ -12,6 +12,7 @@ var name = "";
 function greet() {
 
     var nameEntered = theText.value;
+    var errorname = nameEntered == "";
     var language = document.querySelector("input[name='radioButton']:checked");
 //    alert(nameEntered === "")
     //var langEntered = language;
